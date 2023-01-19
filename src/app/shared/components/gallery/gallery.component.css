@@ -1,0 +1,17 @@
+.galleryGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.galleryTitle {
+  font-size: 18px;
+  font-weight: 600;
+}/*# sourceMappingURL=gallery.component.css.map */
