@@ -8,8 +8,6 @@ export class AnimesService {
 
   constructor(private httpClient1:HttpClient) { }
 
-
-
 getAnimes(){
   return this.httpClient1.get("https://kitsu.io/api/edge/trending/anime?limit=6");
 }

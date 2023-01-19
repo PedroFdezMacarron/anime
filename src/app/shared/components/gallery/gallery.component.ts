@@ -7,7 +7,11 @@ import { Component, Input } from '@angular/core';
 })
 
 export class GalleryComponent {
-@Input() animes:any ;
-galleryTitle:string='Galería';
+@Input() animes:any;
+
+// galleryTit=this.objetoA.galleryTitle;
+
+// animes=[...objetoA.animeList];
+galleryTit:string='Galería';
 
 }
