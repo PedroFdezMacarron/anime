@@ -9,7 +9,9 @@ import { AnimePageComponent } from './pages/anime-page/anime-page.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GalleryComponent } from './shared/components/gallery/gallery.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {RatingModule} from 'primeng/rating';
+import {SliderModule} from 'primeng/slider';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,17 @@ import { GalleryComponent } from './shared/components/gallery/gallery.component'
     AnimeComponent,
     AnimePageComponent,
     HeaderComponent,
-    GalleryComponent,
-   
+    GalleryComponent    
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RatingModule,
+    SliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

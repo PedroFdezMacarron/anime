@@ -1,0 +1,72 @@
+.anime{
+    display: flex;
+    width: 100%;
+    color: white;
+    background-color: #F7F7F7;
+}
+
+
+.filter{
+    padding-left: 100px;
+    margin-right: 10px;
+    width: 30%;
+    max-width: 300px;
+    background-color:#332532;
+    display: flex;
+    flex-direction: column;
+    &--href{
+        width: 100%;
+        height: 0px;
+        font-size: 15px;
+        font-weight: 200;
+        overflow-wrap: normal;
+        overflow-wrap: break-word;
+        overflow-wrap: break-word;
+
+    }
+    &--item{
+        border: 1px solid rgb(0, 0, 0);
+        background-color:#332532;
+        color: white;
+        font-size: 13px; 
+        font-weight: 600;     
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;     
+        color:#A3A9B7;  
+        
+        &-data{
+            display: flex;
+            justify-content:space-between;
+            
+        }
+        &-values{
+            display: flex;
+            justify-content:space-between; 
+            background-color: #3F2E3E;        
+            border-radius: 10px;            
+        }
+
+        &-control{
+            padding-top: 10px;
+        }
+        &-range{
+            padding-top: 10px;
+            display: flex;
+            justify-content:space-between;
+        }
+
+    }
+}
+.gallery{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+.form-search{
+    display: flex;
+}

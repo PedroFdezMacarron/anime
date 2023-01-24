@@ -1,7 +1,10 @@
 <div class="galleryGroup">
-    <div class="galleryTitle">{{galleryTit}}</div>
+    <div class="galleryTitle">{{animes.title}}</div>
     <div class="gallery">  
-        <app-anime *ngFor="let anime of animes" [anime]="anime"></app-anime>
+        <app-anime *ngFor="let anime of animes.datas" [anime]="anime"></app-anime>
+    </div>
+    <div class="galleryFoot">
+        <button>ver mas</button>
     </div>
 </div>
 

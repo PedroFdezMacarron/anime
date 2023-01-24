@@ -7,9 +7,15 @@
     flex-wrap: wrap;
     width: 100%;
     gap:20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .galleryTitle{
     font-size: 18px;
     font-weight: 600;
+}
+.galleryFoot{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 ;
+    padding-right: 20px;
 }

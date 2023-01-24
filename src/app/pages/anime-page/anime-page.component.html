@@ -1,3 +1,91 @@
-<p>anime-page works!</p>
+<div class="anime">
+  <div class="filter">
+    <h2>FILTROS</h2>
+    <br />
+    <br />
+
+    <div class="filter--item">
+        <div class="filter--item-data">
+            <div class="filter--item-title">
+                Año
+            </div>            
+            <div class="filter--item-values">
+                <p>{{rangeValues[0]}}</p>
+                <p>-</p>
+                <p>{{rangeValues[1]}}</p>
+            </div>
+        </div>
+        <div class="filter--item-control">
+            <p-slider [(ngModel)]="rangeValues" (onSlideEnd)="handleChangeYear($event)"  [range]="true" [min]="1907" [max]="2023"></p-slider>
+        </div>    
+        
+        <div class="filter--item-range">
+            <p>1900</p>            
+            <p>2023</p>
+        </div>
+    </div>
+
+    <div class="filter--item">
+        <div class="filter--item-data">
+            <div class="filter--item-title">
+                Puntaje promedio
+            </div>            
+            <div class="filter--item-values">
+                <p>{{avgValues[0]}}%</p>
+                <p>-</p>
+                <p>{{avgValues[1]}}%</p>
+            </div>
+        </div>
+        <div class="filter--item-control">
+            <p-slider [(ngModel)]="avgValues" (onSlideEnd)="handleChangeAvg($event)"  [range]="true" [min]="5" [max]="100"></p-slider>
+        </div>    
+        
+        <div class="filter--item-range">
+            <p>5%</p>            
+            <p>100%</p>
+        </div>
+    </div>      
+
+    <div class="filter--item">
+        <div class="filter--item-data">
+            <div class="filter--item-title">
+                Capítulos
+            </div>            
+            <div class="filter--item-values">
+                <p>{{chapterValues[0]}}</p>
+                <p>-</p>
+                <p>{{chapterValues[1]}}</p>
+            </div>
+        </div>
+        <div class="filter--item-control">
+            <p-slider [(ngModel)]="chapterValues" (onSlideEnd)="handleChangeChap($event)"  [range]="true" [min]="0" [max]="100"></p-slider>
+        </div>    
+        
+        <div class="filter--item-range">
+            <p>1</p>            
+            <p>100</p>
+        </div>
+    </div>      
 
 
+  </div>
+
+
+  
+  <div class="gallery">
+    <div class="search">
+      <input type="text" [(ngModel)]="searchname" />
+      <button (click)="btnSearch(searchname)">Search</button>
+      <br>
+      <a class="filter--href" href="{{url}}" target="_blank" rel="noopener noreferrer">{{url}}</a>
+
+      <!-- <form class="form-search" [formGroup]="searchForm" (ngSubmit)="onSubmit()">                    
+                    <input class="search" formControlName="searchname" placeholder="Por ej: Shin Chan"/>
+                    <button class ="btnsearch" type="submit">Search</button>                    
+            </form>   -->
+    </div>
+    <div class="animes">
+      <app-gallery [animes]="element"></app-gallery>
+    </div>
+  </div>
+</div>

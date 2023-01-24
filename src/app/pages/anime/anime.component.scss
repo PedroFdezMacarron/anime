@@ -1,5 +1,5 @@
 .card{
-    width: 180px;
+    width: 220px;
     font-size: 12px;
     border: 1px solid rgb(229, 229, 229);
     background-color: rgb(247, 247, 255);
@@ -8,13 +8,14 @@
     justify-content: center;
 }
 .imgAnime{
-    height: 250px;
+    height: 280px;
     object-fit: scale-down;    
     
 }
 .title{
     background-color: rgb(202, 202, 255);
-    width: 180px; 
+    // width: 180px; 
+    
     text-align: center;
     height: 20px;    
     overflow: hidden;
